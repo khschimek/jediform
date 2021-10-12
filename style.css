@@ -1,0 +1,14 @@
+body {
+    background-image: url("https://th.bing.com/th/id/R.4c66472323158a651a56466b8da4e90d?rik=oEEVK1JKBetK5w&riu=http%3a%2f%2fimages1.wikia.nocookie.net%2f__cb20121119202113%2fstarwars%2fimages%2ff%2ff4%2fProcessionalWay-Deceived.png&ehk=QLXqlAAOJHo5dL0GKE9H25tbY9Ye%2f1dM0D88AiLnowo%3d&risl=&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#jediForm {
+    background-color: rgba(240, 248, 255, 0.651);
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top:25px;
+    padding:25px;
+    width: 80vw;
+2

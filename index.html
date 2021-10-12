@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <title>Jedi Form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+    <!-- b4-navbar-minimal-a -->
+    <nav class="navbar navbar-expand navbar-light bg-light">
+        <div class="nav navbar-nav">
+            <a class="nav-item nav-link active" href="#">Jedi Academy <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Training</a>
+        </div>
+    </nav>
+
+    <!-- b4-grid-container-fluid -->
+    <!-- A responsive container to hold our form elments -->
+    <div class="container-fluid" id="jediForm">
+
+        <!-- b4-form-input-text -->
+        <div class="form-group">
+          <label for="jediName">Jedi Name</label>
+          <input type="text" class="form-control" name="jediName" id="jediName" aria-describedby="helpId" placeholder="">
+          <small id="helpId" class="form-text text-muted">Make it something cool</small>
+        </div>
+
+        <!-- b4-form-select -->
+        <div class="form-group">
+          <label for="jediType">Designation</label>
+          <select class="form-control" name="jediType" id="jediType" onchange="typeSelected(this)">
+            <option>Consular</option>
+            <option>Guardian</option>
+            <option>Sentinel</option>
+          </select>
+        </div>
+
+        <!-- b4-form-select -->
+        <div class="form-group">
+          <label for="">Trained Under</label>
+          <select class="form-control" name="jediMaster" id="jediMaster">
+            <option>Master Yoda</option>
+            <option>Master Kenobi</option>
+            <option>Master Shaak Ti</option>
+            <option>Master Windu</option>
+          </select>
+        </div>
+
+        <!-- Bootstrap Form Group Wrapper on Color Picker -->
+        <div class="form-group">
+            <label for="lightsaber">Lightsaber Color</label>
+            <input type="color" name="lightsaber" id="lightsaber" value="#00FF00" onchange="colorSelected(this)">
+        </div>
+
+        <!-- b4-button-default -->
+        <center>
+            <button type="button" class="btn btn-primary" style="width:80%;" id="trainButton" onclick="trainJedi()">Train</button>
+        </center>
+
+    </div>
+
+    <!-- Custom Javascript -->
+    <script src="scripts.js"></script>
+      
+    <!-- Optional JavaScript for Bootstrap -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
