@@ -1,7 +1,7 @@
 // Runs on Page Load
 function main() {
-    var jediKnights = localStorage.getItem("jediKnights")
-    console.log("Existing Jedi: " + jediKnights)
+    // var jediKnights = localStorage.getItem("jediKnights")
+    // console.log("Existing Jedi: " + jediKnights)
     console.log("custom javascript loaded")
 }
 
@@ -46,8 +46,8 @@ function trainJedi() {
     console.log("training Jedi...")
 
     // Check for any existing Knights in Local Storage
-    var jediKnights = localStorage.getItem("jediKnights")
-    console.log(JSON.stringify(jediKnights))
+    // var jediKnights = localStorage.getItem("jediKnights")
+    // console.log(JSON.stringify(jediKnights))
 
     // Create a new Jedi object
     var newJedi = {
@@ -55,12 +55,14 @@ function trainJedi() {
         type: document.getElementById("jediType").value,
         master: document.getElementById("jediMaster").value,
         lightsaber: document.getElementById("lightsaber").value,
-        rank: 1
+        rank: 10
     }
 
     // Add the new Jedi to the Collection of Knights and Update Local Storage
-    jediKnights += newJedi
-    localStorage.setItem("jediKnights", JSON.stringify(jediKnights))
+    // jediKnights += newJedi
+    // localStorage.setItem("jediKnights", JSON.stringify(jediKnights))
+
+    console.log("created Jedi " + newJedi.name )
 }
 
 // Run main function on Page Load
